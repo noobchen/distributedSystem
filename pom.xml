@@ -335,6 +335,11 @@
             <version>1.0.8</version>
         </dependency>
         <!--mybatis 数据访问层 end -->
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-extras</artifactId>
+            <version>3.0.7</version>
+        </dependency>
     </dependencies>
     <!-- Build Settings -->
 
