@@ -17,4 +17,7 @@
 
 
     <import resource="classpath:spring/spring-redis.xml"/>
+
+    <!--Spring session with redis-->
+    <bean class="org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration"/>
 </beans>
