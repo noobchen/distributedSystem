@@ -18,6 +18,16 @@
 
     <import resource="classpath:spring/spring-redis.xml"/>
 
+    <!--实现跨域或者跨context共享session 需要指定cookie的path和domain
+    <bean id="defaultCookieSerializer" class="org.springframework.session.web.http.DefaultCookieSerializer">
+        <property name="cookiePath" value="/"/>
+    </bean>
+
+    <bean class="org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration">
+        <property name="cookieSerializer" ref="defaultCookieSerializer"/>
+    </bean>
+    -->
+
     <!--Spring session with redis-->
     <bean class="org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration"/>
 </beans>
