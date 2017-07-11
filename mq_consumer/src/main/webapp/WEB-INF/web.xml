@@ -24,4 +24,8 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
+	<listener>
+		<listener-class>com.distributed.system.common.web.listener.MyContextListener</listener-class>
+	</listener>
+
 </web-app>

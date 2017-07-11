@@ -45,7 +45,7 @@
     	可以用来将Connection、Session和MessageProducer池化，这样可以大大的减少我们的资源消耗。
     	要依赖于 activemq-pool包
      -->
-    <bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory">
+    <bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory" destroy-method="stop">
         <property name="connectionFactory" ref="targetConnectionFactory"/>
         <property name="maxConnections" value="${mq.pool.maxConnections}"/>
     </bean>
